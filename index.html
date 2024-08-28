@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura-Challenge-Encriptador de texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+
+    <header>
+       <img src="assets/Logo.png" alt="Imagen del logo Alura" class="logo">
+       <article class="titulo_pagina"><strong>Encriptador</strong></article>
+    </header>
+
+    <main class="presentacion_encriptador">
+        <section class="caja1_ingresar_texto">
+            <textarea class="area_texto" cols="40" rows="15" placeholder="Ingrese el texto aquí"></textarea>
+               <div class="requisitos">
+                  <img src="assets/bi_exclamation-circle-fill.png" alt="Imagen simbolo exclamacion" class="simbolo">
+                  <p  class="requisitos_encriptador">Solo letras minúsculas y sin acentos</p>
+               </div>
+               <div class="botones_encriptador">
+                  <button onclick="encriptarTexto()" class="encriptar_texto" accesskey="E"><u>E</u>ncriptar</button>
+                  <button onclick="desencriptarTexto()" class="desencriptar_texto" accesskey="D"><u>D</u>esencriptar</button>
+               </div>
+        </section>
+        <section>
+             <textarea  class="texto_desencriptado" cols="20" rows="15" placeholder="Ningún mensaje fue encontrado        Ingresa el texto que desees encriptar o desencriptar."></textarea>
+                <div>
+                   <button onclick="copiarTexto()"  class="copiar_texto" accesskey="C"><u>C</u>opiar</button>
+                </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer_parrafo">Desarrollado por Eduardo Jacob Castillo Flores</p>
+    </footer>
+    <script src="/script.js"></script>
+
+</body>
+</html> 
+
+ 
